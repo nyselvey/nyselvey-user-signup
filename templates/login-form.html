@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Login</title>
+    <style type="text/css">
+      .label {text-align: right}
+      .error {color: red}
+    </style>
+
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link type="text/css" rel="stylesheet" href="/static/bootstrap.css">
+
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">CS253 Blog</a>
+        <ul class="nav pull-right">
+          <li><a href="/blog">Read the Blog</a></li>
+          <li><a href="/blog/newpost">New Post</a></li>
+          <li><a href="/signup">Signup</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div><!-- navbar-inner -->
+    </div><!-- navbar -->
+
+    <div class="container">
+
+      <h2>Login</h2>
+      <form method="post">
+        <table>
+          <tr>
+            <td class="label label-info">
+              Username
+            </td>
+            <td>
+              <input type="text" name="username" value="{{username}}">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label label-info">
+              Password
+            </td>
+            <td>
+              <input type="password" name="password" value="">
+            </td>
+          </tr>
+        </table>
+
+        <div class="error">
+          {{error}}
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+    </div><!--container -->
+  </body>
+
+</html>

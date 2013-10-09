@@ -1,0 +1,25 @@
+.label {
+	margin-right: 10px;
+}
+
+.post-date {
+	color: #3a87ad;
+}
+
+.post-content {
+	margin: 25px 0;
+}
+
+.age {
+	margin: 15px 0;
+	font-size: .8em;
+}
+
+.post-title a {
+	color: black;
+	text-decoration: none;
+}
+
+.post-title a:hover {
+	text-decoration: none;
+}

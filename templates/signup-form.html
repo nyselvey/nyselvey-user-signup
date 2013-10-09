@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sign Up</title>
+      <link type="text/css" rel="stylesheet" href="/static/style.css">
+      <link type="text/css" rel="stylesheet" href="/static/bootstrap.css">
+  </head>
+
+  <body>
+    <!--- ********* Navigation ********* -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">CS253 Blog</a>
+        <ul class="nav pull-right">
+          <li><a href="/blog">Read the Blog</a></li>
+          <li><a href="/blog/newpost">New Post</a></li>
+          <li><a href="/signup">Signup</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div><!-- navbar-inner -->
+    </div><!-- navbar -->
+
+    <!--- ********* Signup Form ********* -->
+    <div class="container">
+      <h2>Signup</h2>
+      <form method="post">
+        <table>
+          <tr>
+            <td class="label label-info">
+              Username
+            </td>
+            <td>
+              <input type="text" name="username" value="{{username}}">
+            </td>
+            <td class="error">
+              {{error_username}}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label label-info">
+              Password
+            </td>
+            <td>
+              <input type="password" name="password" value="">
+            </td>
+            <td class="error">
+              {{error_password}}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label label-info">
+              Verify Password
+            </td>
+            <td>
+              <input type="password" name="verify" value="">
+            </td>
+            <td class="error">
+              {{error_verify}}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label label-info">
+              Email (optional)
+            </td>
+            <td>
+              <input type="text" name="email" value="{{email}}">
+            </td>
+            <td class="error">
+              {{error_email}}
+            </td>
+          </tr>
+        </table>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+    </div><!--container-->
+  </body>
+
+</html>
